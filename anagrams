@@ -1,0 +1,9 @@
+s1, s2 = input().split(" ")
+if len(s1) != len(s2):
+    print("No")
+else:
+    if sorted(s1.upper(), key=ascii) == sorted(s2.upper(), key=ascii):
+        print(s2)
+        print("Yes")
+    else:
+        print("No")
